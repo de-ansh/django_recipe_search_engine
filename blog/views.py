@@ -6,5 +6,5 @@ def index(request):
     return HttpResponse("1st view")
 
 
-def specific(request):
-    return HttpResponse("1st view for specific")
+def specific(request,pk):
+    return HttpResponse(pk)
